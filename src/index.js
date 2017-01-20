@@ -1,11 +1,12 @@
 /* eslint no-undef: "error"*/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Router, browserHistory } from 'react-router';
+import routes from './Routes';
 
 ReactDOM.render(
 
-  <App />,
+  <Router history={browserHistory} routes={routes} />,
 
   document.getElementById('root'),
 );

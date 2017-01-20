@@ -26,8 +26,8 @@ const SmartTable = props => (
 
 SmartTable.propTypes = {
   name: React.PropTypes.string.isRequired,
-  cols: React.PropTypes.arrayOf(React.PropTypes.string),
-  rows: React.PropTypes.arrayOf(React.PropTypes.string),
+  cols: React.PropTypes.arrayOf(React.PropTypes.object),
+  rows: React.PropTypes.arrayOf(React.PropTypes.object),
 };
 
 SmartTable.defaultProps = {

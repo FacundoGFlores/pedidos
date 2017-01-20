@@ -1,12 +1,15 @@
 import React from 'react';
 import '../node_modules/spectre.css/dist/spectre.min.css';
 
-import PedidosPage from './containers/PedidosPage';
-
-const App = () => (
+const App = props => (
   <div>
-    <PedidosPage />
+    {props.children}
   </div>
+
 );
+
+App.PropTypes = {
+  children: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+};
 
 export default App;

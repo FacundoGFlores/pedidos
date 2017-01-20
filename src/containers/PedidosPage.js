@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import SmartTable from '../components/SmartTable';
 
 const Columnas = [
@@ -46,6 +47,7 @@ const Pedidos = [
 const PedidosPage = () => (
   <div>
     <h1>Lista de Pedidos</h1>
+    <Link to="nuevopedido">Nuevo Pedido</Link>
     <SmartTable name="listapedidos" cols={Columnas} rows={Pedidos} />
   </div>
 );
