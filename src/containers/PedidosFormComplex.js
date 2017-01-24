@@ -8,6 +8,11 @@ class PedidosForm extends React.Component {
     super(props);
   }
 
+  handleSubmit = (values) => {
+      // Do something with the form values
+    console.log(values);
+  }
+
   render() {
     const { handleSubmit } = this.props;
     return (
