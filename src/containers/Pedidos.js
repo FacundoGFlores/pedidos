@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import PedidosForm from './PedidosForm';
+import PedidosForm from './PedidosFormComplex';
 
 export default class Pedidos extends React.Component {
   handleSubmit = (values) => {
